@@ -78,6 +78,11 @@ sudo ./setup.sh
 
 
 ```
+to check you dockers after run :
+
+```
+sudo dockers ps
+```
 
 ------------------------------
 
