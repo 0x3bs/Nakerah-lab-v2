@@ -71,7 +71,7 @@ sudo apt-get install git
 
 sudo git clone https://github.com/0x3bs/Nakerah-lab-v2.git
 
-cd Nakerah-lab-v2-main
+cd Nakerah-lab-v2
 
 sudo chmod +x setup.sh
 
