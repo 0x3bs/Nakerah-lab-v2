@@ -501,8 +501,8 @@ while x != 0:
 
                 print("Wait for install {web goat  }")
                 os.system("sudo apt install docker.io  -y")
-                os.system("sudo docker pull webgoat/goatandwolf")
-                os.system("docker run -d -p 8003:8080 -p 9091:9090 --name web_goatt --restart=always webgoat/goatandwolf")
+                os.system("sudo docker pull webgoat/webgoat")
+                os.system("docker run -it -d -p 127.0.0.1:8080:8080 -p 127.0.0.1:9091:9090 --name web_goat --restart=always webgoat/webgoat")
                 time.sleep(4)
                 os.system("sudo docker ps")
 
@@ -604,8 +604,8 @@ while x != 0:
                     ]
                     run_command(sed_command)
                 time.sleep(1.5)
-                os.system("sudo docker pull webgoat/goatandwolf")
-                os.system("docker run -d -p 8003:8080 -p 9091:9090 --name web_goatt --restart=always webgoat/goatandwolf")
+                os.system("sudo docker pull webgoat/webgoatf")
+                os.system("sudo docker run -it -d -p 127.0.0.1:8080:8080 -p 127.0.0.1:9091:9090 --name web_goat --restart=always webgoat/webgoat")
                 os.system("sudo docker ps")
                 time.sleep(3)
                 os.system("sudo docker pull bkimminich/juice-shop")
