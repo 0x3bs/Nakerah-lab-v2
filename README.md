@@ -46,6 +46,7 @@ pass:root123
 ```
 
 if you don't remember mysql credentials run :
+step by step
 
 ```
 sudo systemctl stop mariadb
