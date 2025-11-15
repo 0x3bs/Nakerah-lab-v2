@@ -415,6 +415,7 @@ while x != 0:
             elif x == 3:
                 print("Wait for install { dvwa       }")
                 os.system("sudo apt install docker.io  -y")
+                os.system("sudo docker pull vulnerables/web-dvwa")
                 os.system("docker run -d -p 1111:80 --name dvwa --restart=always vulnerables/web-dvwa")
                 os.system("sudo docker ps")
                 time.sleep(1.5)
@@ -542,6 +543,7 @@ while x != 0:
                 os.system("sudo docker ps")
                 time.sleep(1.5)
                 os.system("sudo cp -r xvwa /var/www/html/")
+                os.system("sudo docker pull vulnerables/web-dvwa")
                 os.system("docker run -d -p 1111:80 --name dvwa --restart=always vulnerables/web-dvwa")
                 os.system("sudo docker ps")
                 time.sleep(1.5)
