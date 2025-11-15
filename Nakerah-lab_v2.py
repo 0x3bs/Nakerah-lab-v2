@@ -512,7 +512,7 @@ while x != 0:
             
                 os.system("sudo apt install docker.io  -y")
                 os.system("sudo docker pull bkimminich/juice-shop")
-                os.system("sudo docker run --rm -d -p 3000:3000 --restart=always bkimminich/juice-shop:latest ")
+                os.system("sudo docker run  -d -p 3000:3000 --name juice_shop --restart=always bkimminich/juice-shop:latest ")
                 os.system("sudo docker ps")
 
             elif x == 10:
@@ -609,7 +609,7 @@ while x != 0:
                 os.system("sudo docker ps")
                 time.sleep(3)
                 os.system("sudo docker pull bkimminich/juice-shop")
-                os.system("sudo docker run --rm -d -p 3000:3000 --name juice_shop --restart=always bkimminich/juice-shop:latest ")
+                os.system("sudo docker run  -d -p 3000:3000 --name juice_shop --restart=always bkimminich/juice-shop:latest ")
                 os.system("sudo docker ps")
                 time.sleep(1.5)
                 os.system("sudo docker pull adamdoupe/wackopicko")
