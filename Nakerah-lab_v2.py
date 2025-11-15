@@ -403,7 +403,7 @@ while x != 0:
                 print("Wait for install { bWAPP      }")
                 os.system("sudo apt install docker.io  -y")
                 os.system("sudo docker pull raesene/bwapp")
-                os.system("sudo docker run -d -p 8000:80 --name bwapp raesene/bwapp")
+                os.system("sudo docker run -d -p 8000:80 --name bwapp --restart=always raesene/bwapp")
                 os.system("sudo docker ps")
                 time.sleep(1.5)
                 op_list()
@@ -415,7 +415,7 @@ while x != 0:
             elif x == 3:
                 print("Wait for install { dvwa       }")
                 os.system("sudo apt install docker.io  -y")
-                os.system("docker run -d -p 1111:80 --name dvwa vulnerables/web-dvwa")
+                os.system("docker run -d -p 1111:80 --name dvwa --restart=always vulnerables/web-dvwa")
                 os.system("sudo docker ps")
                 time.sleep(1.5)
                 op_list()
@@ -434,7 +434,7 @@ while x != 0:
                 print("Wait for install { sqli-labs  }")
                 os.system("sudo apt install docker.io  -y")
                 os.system("sudo docker pull acgpiano/sqli-labs")
-                os.system("sudo docker run -dt -p 8001:80 --name sqli-labs acgpiano/sqli-labs:latest")
+                os.system("sudo docker run -dt -p 8001:80 --name sqli-labs --restart=always acgpiano/sqli-labs:latest")
                 os.system("sudo docker ps")
                 time.sleep(1.5)
                 op_list()
@@ -445,7 +445,7 @@ while x != 0:
                 os.system("sudo pip3 install docker --break-system-packages")
                 os.system("sudo apt install docker.io  -y")
                 os.system("sudo docker pull santosomar/hackazon")
-                os.system("sudo docker run --name hackazon -d -p 8002:80 santosomar/hackazon:latest supervisord -n")
+                os.system("sudo docker run --name hackazon -d -p 8002:80 --restart=always santosomar/hackazon:latest supervisord -n")
                 os.system("sudo docker ps")
                 import docker
 
@@ -502,7 +502,7 @@ while x != 0:
                 print("Wait for install {web goat  }")
                 os.system("sudo apt install docker.io  -y")
                 os.system("sudo docker pull webgoat/goatandwolf")
-                os.system("docker run -d -p 8003:8080 -p 9091:9090 --name web_goatt webgoat/goatandwolf")
+                os.system("docker run -d -p 8003:8080 -p 9091:9090 --name web_goatt --restart=always webgoat/goatandwolf")
                 time.sleep(4)
                 os.system("sudo docker ps")
 
@@ -512,7 +512,7 @@ while x != 0:
             
                 os.system("sudo apt install docker.io  -y")
                 os.system("sudo docker pull bkimminich/juice-shop")
-                os.system("sudo docker run --rm -d -p 3000:3000 bkimminich/juice-shop:latest ")
+                os.system("sudo docker run --rm -d -p 3000:3000 --restart=always bkimminich/juice-shop:latest ")
                 os.system("sudo docker ps")
 
             elif x == 10:
@@ -521,7 +521,7 @@ while x != 0:
                 os.system("sudo apt install docker.io  -y")
 
                 os.system("sudo docker pull adamdoupe/wackopicko")
-                os.system("sudo docker run -d -p 8004:80 --name wackopicko adamdoupe/wackopicko:latest ")
+                os.system("sudo docker run -d -p 8004:80 --name wackopicko --restart=always adamdoupe/wackopicko:latest ")
                 os.system("sudo docker ps")
 
             elif x == 11:
@@ -529,7 +529,7 @@ while x != 0:
                 print("Wait for install {Damn Vulnerable NodeJS Application  }")
                 os.system("sudo apt install docker.io  -y")
                 os.system("sudo docker pull appsecco/dvna")
-                os.system("docker run --name dvna -p 9090:9090 -d appsecco/dvna:sqlite")
+                os.system("docker run --name dvna -p 9090:9090 -d --restart=always appsecco/dvna:sqlite")
 
                 os.system("sudo docker ps")
 
@@ -538,22 +538,22 @@ while x != 0:
                 print("Wait for install { All        }")
                 os.system("sudo apt install docker.io  -y")
                 os.system("sudo docker pull raesene/bwapp")
-                os.system("sudo docker run -d -p 8000:80 --name bwapp raesene/bwapp")
+                os.system("sudo docker run -d -p 8000:80 --name bwapp --restart=always raesene/bwapp")
                 os.system("sudo docker ps")
                 time.sleep(1.5)
                 os.system("sudo cp -r xvwa /var/www/html/")
-                os.system("docker run -d -p 1111:80 --name dvwa vulnerables/web-dvwa")
+                os.system("docker run -d -p 1111:80 --name dvwa --restart=always vulnerables/web-dvwa")
                 os.system("sudo docker ps")
                 time.sleep(1.5)
                 os.system("sudo cp -r mutillidae /var/www/html/ ;sudo chown -R www-data:www-data /var/www/html/mutillidae/")
                 os.system("sudo cp -r hackademic /var/www/html/")
                 os.system("sudo docker pull acgpiano/sqli-labs")
-                os.system("sudo docker run -dt -p 8001:80 --name sqli-labs acgpiano/sqli-labs:latest")
+                os.system("sudo docker run -dt -p 8001:80 --name sqli-labs --restart=always acgpiano/sqli-labs:latest")
                 os.system("sudo docker ps")
                 time.sleep(1.5)
                 os.system("sudo pip3 install docker --break-system-packages")
                 os.system("sudo docker pull santosomar/hackazon")
-                os.system("sudo docker run --name hackazon -d -p 8002:80 santosomar/hackazon:latest supervisord -n")
+                os.system("sudo docker run --name hackazon -d -p 8002:80 --restart=always santosomar/hackazon:latest supervisord -n")
                 os.system("sudo docker ps")
                 import docker
 
@@ -605,19 +605,19 @@ while x != 0:
                     run_command(sed_command)
                 time.sleep(1.5)
                 os.system("sudo docker pull webgoat/goatandwolf")
-                os.system("docker run -d -p 8003:8080 -p 9091:9090 --name web_goatt webgoat/goatandwolf")
+                os.system("docker run -d -p 8003:8080 -p 9091:9090 --name web_goatt --restart=always webgoat/goatandwolf")
                 os.system("sudo docker ps")
                 time.sleep(3)
                 os.system("sudo docker pull bkimminich/juice-shop")
-                os.system("sudo docker run --rm -d -p 3000:3000 bkimminich/juice-shop:latest ")
+                os.system("sudo docker run --rm -d -p 3000:3000 --name juice_shop --restart=always bkimminich/juice-shop:latest ")
                 os.system("sudo docker ps")
                 time.sleep(1.5)
                 os.system("sudo docker pull adamdoupe/wackopicko")
-                os.system("sudo docker run -d -p 8004:80 --name wackopicko adamdoupe/wackopicko:latest ")
+                os.system("sudo docker run -d -p 8004:80 --name wackopicko --restart=always adamdoupe/wackopicko:latest ")
                 os.system("sudo docker ps")
                 time.sleep(1.5)
                 os.system("sudo docker pull appsecco/dvna")
-                os.system("docker run --name dvna -p 9090:9090 -d appsecco/dvna:sqlite")
+                os.system("docker run --name dvna -p 9090:9090 -d --restart=always appsecco/dvna:sqlite")
                 os.system("sudo docker ps")
 
                 op_list()
