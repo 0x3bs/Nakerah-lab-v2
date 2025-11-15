@@ -5,7 +5,7 @@ This project is trying to help the community to install their own lab .
 
 This is how it looks:
 
-![alt text](https://github.com/0xL1mb0/Nakerah-lab-v1/blob/master/imgs/1.png "Pic 1")
+![alt text](https://github.com/0x3bs/Nakerah-lab-v2/blob/main/imgs/image-10.png "Pic 1")
 
 Now this is what is Nakerah-lab V2 include .
 
@@ -26,7 +26,7 @@ Now this is what is Nakerah-lab V2 include .
 or: 
 And this After install :
 
-![alt text](https://github.com/0xL1mb0/Nakerah-lab-v1/blob/master/imgs/2.png "Pic 1")
+![alt text](https://github.com/0x3bs/Nakerah-lab-v2/blob/main/imgs/image-12.png "Pic 1")
 
 ## Installation
 
