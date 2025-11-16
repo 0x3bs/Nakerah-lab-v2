@@ -506,6 +506,8 @@ while x != 0:
                 os.system("docker run -it -d -p 127.0.0.1:8080:8080 -p 127.0.0.1:9091:9090 --name web_goat --restart=always webgoat/webgoat")
                 time.sleep(4)
                 os.system("sudo docker ps")
+                op_list()
+                
 
             elif x == 9:
 
@@ -515,6 +517,7 @@ while x != 0:
                 os.system("sudo docker pull bkimminich/juice-shop")
                 os.system("sudo docker run  -d -p 3000:3000 --name juice_shop --restart=always bkimminich/juice-shop:latest ")
                 os.system("sudo docker ps")
+                op_list()
 
             elif x == 10:
 
@@ -533,7 +536,7 @@ while x != 0:
                 os.system("docker run --name dvna -p 9090:9090 -d --restart=always appsecco/dvna:sqlite")
 
                 os.system("sudo docker ps")
-
+                op_list()
 
             elif x == 12:
                 print("Wait for install { All        }")
