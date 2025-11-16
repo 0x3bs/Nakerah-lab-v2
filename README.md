@@ -87,6 +87,58 @@ sudo dockers ps
 
 ------------------------------
 
+to open any labs from another device : 
+
+you must know the IP for the device which has the labs and then :
+
+to open index.html :
+```
+http://{ip}
+```
+
+to open bWAPP :
+```
+to install : http://{ip}:8000/install.php
+http://{ip}:8000
+```
+to open dvwa :
+```
+http://{ip}:1111
+```
+
+to open sqli_labs
+```
+http://{ip}:8001
+```
+
+to open hackazon :
+```
+http://{ip}:8002
+```
+
+to open webgoat :
+```
+http://{ip}:8080/WebGoat
+```
+
+to open webwolf :
+```
+http://{ip}:9091/WebWolf
+```
+to open juicw_shop :
+```
+http://{ip}:3000
+```
+
+to open wackopicko :
+```
+http://{ip}:8004
+```
+to open dvna :
+```
+http://{ip}:9090
+```
+-------------------------------
 The login details
 
 for xvwa :
