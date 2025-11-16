@@ -291,9 +291,9 @@ try:
     cursor.execute("flush privileges;")
     print("mutillidae part 1")
     time.sleep(0.5)
-    cursor.execute("ALTER USER 'root'@'localhost' IDENTIFIED BY 'mutillidae';")
-    cursor.execute("SET PASSWORD FOR 'root'@'localhost' = PASSWORD('mutillidae');")
-    cursor.execute("flush privileges;")
+    #cursor.execute("ALTER USER 'root'@'localhost' IDENTIFIED BY 'mutillidae';")
+    #cursor.execute("SET PASSWORD FOR 'root'@'localhost' = PASSWORD('mutillidae');")
+    #cursor.execute("flush privileges;")
     time.sleep(0.5)
     print("mutillidae part 2")
 
