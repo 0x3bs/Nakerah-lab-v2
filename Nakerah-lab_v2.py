@@ -385,7 +385,7 @@ def op_list():
     print("\033[1;34;40m [+] Enter (5) To install { hackademic }")
     print("\033[1;35;40m [+] Enter (6) To install { sqli-labs  }")
     print("\033[1;36;40m [+] Enter (7) To install { Rapid7 Hackazon  }")
-    print("\033[1;37;40m [+] Enter (8) To install { WebGoa  }")
+    print("\033[1;37;40m [+] Enter (8) To install { WebGoat  }")
     print("\033[1;38;40m [+] Enter (9) To install { OWASP Juice Shopp  }")
     print("\033[1;39;40m [+] Enter (10) To install { WackoPicko  }")
     print("\033[1;40;40m [+] Enter (11) To install { Damn Vulnerable NodeJS Application }")
