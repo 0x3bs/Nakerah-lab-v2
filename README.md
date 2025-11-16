@@ -91,7 +91,7 @@ to open any labs from another device :
 
 you must know the IP for the device which has the labs and then :
 
-to knoq the IP :
+to know the IP :
 ```
 ip a
 ```
