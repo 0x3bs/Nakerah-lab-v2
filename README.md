@@ -91,6 +91,11 @@ to open any labs from another device :
 
 you must know the IP for the device which has the labs and then :
 
+to knoq the IP :
+```
+ip a
+```
+
 to open index.html :
 ```
 http://{ip}
