@@ -144,7 +144,9 @@ to open dvna :
 http://{ip}:9090
 ```
 
-to install any docker :
+-------
+
+to stop any docker :
 
 ```
 sudo docker stop {docker_name}
