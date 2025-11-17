@@ -575,12 +575,12 @@ while x != 0:
                 os.system("sudo docker pull raesene/bwapp")
                 os.system("sudo docker run -d -p 8000:80 --name bwapp --restart=always raesene/bwapp")
                 os.system("sudo docker ps")
-                time.sleep(1.5)
+                time.sleep(3)
                 op_list()
             elif x == 2:
                 print("Wait for install { xvwa       }")
                 os.system("sudo cp -r xvwa /var/www/html/")
-                time.sleep(1.5)
+                time.sleep(3)
                 op_list()
             elif x == 3:
                 print("Wait for install { dvwa       }")
@@ -588,7 +588,7 @@ while x != 0:
                 os.system("sudo docker pull vulnerables/web-dvwa")
                 os.system("docker run -d -p 1111:80 --name dvwa --restart=always vulnerables/web-dvwa")
                 os.system("sudo docker ps")
-                time.sleep(1.5)
+                time.sleep(3)
                 op_list()
             elif x == 4:
                 print("Wait for install { mutillidae }")
@@ -597,12 +597,12 @@ while x != 0:
                 os.system("sudodocker run -d -p 8009:80 -p 443:443 --name mutillidae --restart=always bltsec/mutillidae-docker")
 				os.system("sudo docker exec -d mutillidae /opt/lampp/lampp start")
 
-                time.sleep(1.5)
+                time.sleep(3)
                 op_list()
             elif x == 5:
                 print("Wait for install { hackademic }")
                 os.system("sudo cp -r hackademic /var/www/html/")
-                time.sleep(1.5)
+                time.sleep(3)
                 op_list()
             elif x == 6:
                 print("Wait for install { sqli-labs  }")
@@ -610,7 +610,7 @@ while x != 0:
                 os.system("sudo docker pull acgpiano/sqli-labs")
                 os.system("sudo docker run -dt -p 8001:80 --name sqli-labs --restart=always acgpiano/sqli-labs:latest")
                 os.system("sudo docker ps")
-                time.sleep(1.5)
+                time.sleep(3)
                 op_list()
 
             elif x == 7:
@@ -690,6 +690,7 @@ while x != 0:
                 os.system("sudo docker pull bkimminich/juice-shop")
                 os.system("sudo docker run  -d -p 3000:3000 --name juice_shop --restart=always bkimminich/juice-shop:latest ")
                 os.system("sudo docker ps")
+				time.sleep(3)
                 op_list()
 
             elif x == 10:
@@ -700,6 +701,7 @@ while x != 0:
                 os.system("sudo docker pull adamdoupe/wackopicko")
                 os.system("sudo docker run -d -p 8004:80 --name wackopicko --restart=always adamdoupe/wackopicko:latest ")
                 os.system("sudo docker ps")
+				time.sleep(3)
 
             elif x == 11:
 
@@ -709,6 +711,7 @@ while x != 0:
                 os.system("docker run --name dvna -p 9090:9090 -d --restart=always appsecco/dvna:sqlite")
 
                 os.system("sudo docker ps")
+				time.sleep(3)
                 op_list()
 
             elif x == 12:
@@ -717,12 +720,12 @@ while x != 0:
                 os.system("sudo docker pull raesene/bwapp")
                 os.system("sudo docker run -d -p 8000:80 --name bwapp --restart=always raesene/bwapp")
                 os.system("sudo docker ps")
-                time.sleep(1.5)
+                time.sleep(3)
                 os.system("sudo cp -r xvwa /var/www/html/")
                 os.system("sudo docker pull vulnerables/web-dvwa")
                 os.system("docker run -d -p 1111:80 --name dvwa --restart=always vulnerables/web-dvwa")
                 os.system("sudo docker ps")
-                time.sleep(1.5)
+                time.sleep(3)
                 os.system("docker pull bltsec/mutillidae-docker")
                 os.system("docker run -d -p 8009:80 -p 443:443 --name mutillidae --restart=always bltsec/mutillidae-docker")
 				time.sleep(2)
@@ -732,7 +735,7 @@ while x != 0:
                 os.system("sudo docker pull acgpiano/sqli-labs")
                 os.system("sudo docker run -dt -p 8001:80 --name sqli-labs --restart=always acgpiano/sqli-labs:latest")
                 os.system("sudo docker ps")
-                time.sleep(1.5)
+                time.sleep(3)
                 os.system("sudo pip3 install docker --break-system-packages")
                 os.system("sudo docker pull santosomar/hackazon")
                 os.system("sudo docker run --name hackazon -d -p 8002:80 --restart=always santosomar/hackazon:latest supervisord -n")
@@ -785,7 +788,7 @@ while x != 0:
                         'Referer.php'
                     ]
                     run_command(sed_command)
-                time.sleep(1.5)
+                time.sleep(3)
                 os.system("sudo docker pull webgoat/webgoatf")
                 os.system("sudo docker run -it -d -p 127.0.0.1:8080:8080 -p 127.0.0.1:9091:9090 --name web_goat --restart=always webgoat/webgoat")
                 os.system("sudo docker ps")
@@ -793,11 +796,11 @@ while x != 0:
                 os.system("sudo docker pull bkimminich/juice-shop")
                 os.system("sudo docker run  -d -p 3000:3000 --name juice_shop --restart=always bkimminich/juice-shop:latest ")
                 os.system("sudo docker ps")
-                time.sleep(1.5)
+                time.sleep(3)
                 os.system("sudo docker pull adamdoupe/wackopicko")
                 os.system("sudo docker run -d -p 8004:80 --name wackopicko --restart=always adamdoupe/wackopicko:latest ")
                 os.system("sudo docker ps")
-                time.sleep(1.5)
+                time.sleep(3)
                 os.system("sudo docker pull appsecco/dvna")
                 os.system("docker run --name dvna -p 9090:9090 -d --restart=always appsecco/dvna:sqlite")
                 os.system("sudo docker ps")
