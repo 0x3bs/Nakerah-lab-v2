@@ -347,7 +347,7 @@ html ='''
 <li><a id=link HREF='http://'''+localip+''':1111'>Damn Vulnerable Web Application</a>
 <li><a id=link HREF='/hackademic'>OWASP Hackademic</a>
 <li><a id=link HREF='/xvwa'>Extreme Vulnerable Node Application</a>
-<li><a id=link HREF='http://'''+localip+''':8008/mutillidae'>OWASP Mutillidae II new version  </a>
+<li><a id=link HREF='http://'''+localip+''':8009/mutillidae'>OWASP Mutillidae II new version  </a>
 <li><a id=link HREF='http://'''+localip+''':8001/'>Sql lab  </a>
 <li><a id=link HREF='http://'''+localip+''':8002/'>Rapid7 Hacksazon  </a>
 <li><a id=link HREF='http://'''+localip+''':8080/WebGoat'>WebGoat  </a>
