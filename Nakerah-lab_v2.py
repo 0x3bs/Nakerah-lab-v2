@@ -593,8 +593,9 @@ while x != 0:
             elif x == 4:
                 print("Wait for install { mutillidae }")
                 os.system("sudo apt install docker.io -y")
-                os.system("docker pull bltsec/mutillidae-docker")
-                os.system("docker run -d -p 8009:80 -p 443:443 --name mutillidae --restart=always bltsec/mutillidae-docker")
+                os.system("sudodocker pull bltsec/mutillidae-docker")
+                os.system("sudodocker run -d -p 8009:80 -p 443:443 --name mutillidae --restart=always bltsec/mutillidae-docker")
+				os.system("sudo docker exec -d mutillidae /opt/lampp/lampp start")
 
                 time.sleep(1.5)
                 op_list()
@@ -724,6 +725,8 @@ while x != 0:
                 time.sleep(1.5)
                 os.system("docker pull bltsec/mutillidae-docker")
                 os.system("docker run -d -p 8009:80 -p 443:443 --name mutillidae --restart=always bltsec/mutillidae-docker")
+				time.sleep(2)
+				os.system("sudo docker exec -d mutillidae /opt/lampp/lampp start")
                 time.sleep(5)
                 os.system("sudo cp -r hackademic /var/www/html/")
                 os.system("sudo docker pull acgpiano/sqli-labs")
