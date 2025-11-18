@@ -386,8 +386,9 @@ with open("index.html","w") as f:
 time.sleep(0.5)
 os.system("sudo mv index.html /var/www/html/index.html")
 time.sleep(0.5)
-os.system("sudo cp ip_index.py /var/www/html ")
+
 os.system("sudo chmod +x ip_index.py ")
+os.system("sudo cp ip_index.py /var/www/html ")
 os.system('sudo ( crontab -l 2>/dev/null; echo "@reboot /usr/bin/python3 /root/myscript.py" ) | crontab -')
 
 time.sleep(3)
