@@ -389,7 +389,7 @@ time.sleep(0.5)
 
 os.system("sudo chmod +x ip_index.py ")
 os.system("sudo cp ip_index.py /var/www/html ")
-os.system('sudo ( crontab -l 2>/dev/null; echo "@reboot /usr/bin/python3 /root/myscript.py" ) | crontab -')
+os.system('( crontab -l 2>/dev/null; echo "@reboot /usr/bin/python3 /var/www/html/ip_index.py" ) | sudo crontab -')
 
 time.sleep(3)
 
