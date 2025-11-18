@@ -151,6 +151,17 @@ to stop any docker :
 ```
 sudo docker stop {docker_name}
 ```
+
+------------
+
+if there is any problem with any lab :
+
+```
+sudo docker rm -f {docker_name}
+```
+
+and run the script again🙂
+
 -------------------------------
 The login details
 
