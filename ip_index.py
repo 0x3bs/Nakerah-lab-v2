@@ -1,4 +1,5 @@
 import socket
+import os
 
 hostname= socket.gethostname()
 localip = socket.gethostbyname(hostname)
@@ -165,4 +166,7 @@ html ='''
 '''
 
 with open("index.html","w") as f:
+
     f.write(html)
+
+os.system("sudo docker exec -d mutillidae /opt/lampp/lampp start")
